@@ -1,13 +1,10 @@
-/* Martin Barker 2017
-*	 This program executes a simple shell in c
-* The shell can run background proccesses, command line arguments, and
-* perform I/O redirection.
-* The shell uses fork(), exec(), and waitpid() to execute commands.
-The shell supports three built in commands: exit, cd, and status. As well as
-regular commands like 'ls', 'sleep', 'pwd', 'cd', etc...
+Martin Barker 2017
+This program executes a simple shell in c
+The shell can run background proccesses, command line arguments, and perform I/O redirection.
+The shell uses fork(), exec(), and waitpid() to execute commands.
+The shell supports three built in commands: exit, cd, and status. As well as regular commands like 'ls', 'sleep', 'pwd', 'cd', etc...
 
 A CTRL-C command from the keyboard will send a SIGINT signal to your parent process and all children at the same time.
-
 
 A CTRL-Z command from the keyboard will send a SIGTSTP signal to your shell. When this signal is received, your shell will display an informative message (see below) and then enter a state where new commands can no longer be run in the background.
 
